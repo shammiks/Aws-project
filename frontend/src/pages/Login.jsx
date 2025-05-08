@@ -32,7 +32,7 @@ const Login = () => {
     console.log(input);
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_WEB_URL}/api/v1/user/login`, input, {
+      const response = await axios.post(`https://mern-blog-ha28.onrender.com/api/v1/user/login`, input, {
         headers: {
           "Content-Type": "application/json"
         },
