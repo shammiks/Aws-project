@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button } from './components/ui/button'
-import Signup from './pages/signup'
+import Signup from './pages/Signup'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
