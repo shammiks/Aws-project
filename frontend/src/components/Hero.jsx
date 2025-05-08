@@ -18,7 +18,7 @@ const Hero = () => {
           <Link to={"/about"}><Button variant="outline" className="border-white px-6 py-3 text-lg">Learn More</Button></Link>
         </div>
       </div>
-        {/* img section */}
+        {/* image section */}
         <div className=' flex items-center justify-center '>
             <img src={heroImg} alt="" className='md:h-[550px] md:w-[550px]'/>
         </div>
