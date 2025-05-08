@@ -1,8 +1,5 @@
 import Hero from '@/components/Hero'
 import React from 'react'
-import { blogJson } from './Blog'
-import BlogCard from '@/components/blogCard'
-import Newsletter from '@/components/Newsletter'
 import RecentBlog from '@/components/RecentBlog'
 import PopularAuthors from '@/components/PopularAuthors'
 
