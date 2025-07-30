@@ -1,20 +1,12 @@
-# frontend/Dockerfile
-
-FROM node:18
-
+# Step 1: Build React app
+FROM node:18 AS build
 WORKDIR /app
-
-COPY package*.json ./
-RUN npm install
-
 COPY . .
+RUN npm install && npm run build
 
-RUN npm run build
-
-# Use nginx to serve the built frontend
+# Step 2: Serve with Nginx
 FROM nginx:alpine
-COPY --from=0 /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+# 👇 Use custom Nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
