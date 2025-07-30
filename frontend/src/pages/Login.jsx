@@ -32,7 +32,7 @@ const Login = () => {
     console.log(input);
 
     try {
-      const response = await axios.post(`http://16.170.232.197:5000/api/v1/user/login`, input, {
+      const response = await axios.post(`http://16.16.184.127:5000/api/v1/user/login`, input, {
         headers: {
           "Content-Type": "application/json"
         },

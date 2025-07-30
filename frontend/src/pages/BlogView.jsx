@@ -38,7 +38,7 @@ const BlogView = () => {
     const likeOrDislikeHandler = async () => {
         try {
             const action = liked ? 'dislike' : 'like';
-            const res = await axios.get(`http://16.170.232.197:5000/api/v1/blog/${selectedBlog?._id}/${action}`, { withCredentials: true })
+            const res = await axios.get(`http://16.16.184.127:5000/api/v1/blog/${selectedBlog?._id}/${action}`, { withCredentials: true })
             if (res.data.success) {
                 const updatedLikes = liked ? blogLike - 1 : blogLike + 1;
                 setBlogLike(updatedLikes);
