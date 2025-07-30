@@ -25,7 +25,7 @@ const CreateBlog = () => {
         
         try {
             setLoading(true)
-            const res = await axios.post(`http://localhost:5000/api/v1/blog/`, { title, category }, {
+            const res = await axios.post(`http://51.20.75.180:5000/api/v1/blog/`, { title, category }, {
                 headers: {
                     "Content-Type": "application/json",
                 },

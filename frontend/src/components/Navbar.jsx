@@ -56,7 +56,7 @@ const Navbar = () => {
     const logoutHandler = async (e) => {
 
         try {
-            const res = await axios.get(`http://localhost:5000/api/v1/user/logout`, { withCredentials: true });
+            const res = await axios.get(`http://51.20.75.180:5000/api/v1/user/logout`, { withCredentials: true });
             if (res.data.success) {
                 navigate("/")
                 dispatch(setUser(null))

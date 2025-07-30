@@ -69,7 +69,7 @@ const Profile = () => {
 
         try {
             setLoading(true)
-            const res = await axios.put(`http://localhost:5000/api/v1/user/profile/update`, formData, {
+            const res = await axios.put(`http://51.20.75.180:5000/api/v1/user/profile/update`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 },
