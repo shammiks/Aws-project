@@ -42,7 +42,7 @@ const RecentBlog = () => {
     useEffect(() => {
         const getAllPublsihedBlogs = async () => {
             try {
-                const res = await axios.get(`http://13.61.181.163:5000/api/v1/blog/get-published-blogs`, { withCredentials: true })
+                const res = await axios.get(`http://16.170.232.197:5000/api/v1/blog/get-published-blogs`, { withCredentials: true })
                 if (res.data.success) {
                     dispatch(setBlog(res.data.blogs))
                 }
