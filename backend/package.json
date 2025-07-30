@@ -14,6 +14,7 @@
   "description": "",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.856.0",
+    "@aws-sdk/client-sns": "^3.856.0",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.6.0",
     "cookie-parser": "^1.4.7",
@@ -25,6 +26,8 @@
     "mongoose": "^8.9.5",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.10",
-    "uuid": "^11.1.0"
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "winston-cloudwatch": "^6.3.0"
   }
 }
